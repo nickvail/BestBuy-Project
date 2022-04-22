@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scaleable=yes" />
+        <title>Project 2 | Nick Vaillancourt</title>
+        <meta name="author" content="Nick Vaillancourt" />
+        <meta name="description" content="Project 2 for COMP1054 w/ Jeremy McCulley" />
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <!-- CSS -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/7acdabf8dd.js" crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="js/styles.js" defer ></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- Header top section -->
+            <div id="headerTop">
+                <ul>
+                    <li><a href="#"><small>Order Status</small></a></li>
+                    <li><a href="#"><small>Blog</small></a></li>
+                    <li><a href="#"><small>Best Buy Business</small></a></li>
+                    <li><a href="#"><small>Français</small></a></li>
+                </ul>
+            </div>
+            <!-- Header middle section-->
+            <div id="headerMid">
+                <div id="headerLogo">
+                    <a href="index.html"><img src="img/bestbuy-logowhite.png" alt="Best Buy logo" width="85" height="50"/></a>
+                </div>
+                <div id="headerSearch">
+                    <form>
+                        <input id="searchText" type="text" placeholder="Search Best Buy">
+                        <button id="searchButton" type="submit">
+                            <img src="img/search.png" alt="search button" width="15" height="15" />
+                        </button>
+                    </form>
+                </div>
+                <div id="headerIcons">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-shop"></i>Stores</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-user"></i>Account</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main nav -->
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <h2><a href="#">Whats Popular</a></h2>
+                        <div id="dropdown-content">
+                                <a href="#">Top Deals</a>
+                                <a href="#">Mother's Day</a>
+                                <a href="#">Best Buy Outlet</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">Shop by Category</a></h2>
+                        <div  id="dropdown-content">
+                            <ul>
+                                <li><a href="#">Computers, Tablets, & Accessories</a></li>
+                                <li><a href="#">Cell Phones and Accessories</a></li>
+                                <li><a href="#">Office Supplies & Ink</a></li>
+                                <li><a href="#">TV & Home Theatre</a></li>
+                                <li><a href="#">Headphones, Speakers, & Audio</a></li>
+                                <li><a href="#">Cameras & Camcorders</a></li>
+                                <li><a href="#">Car Tech and GPS</a></li>
+                                <li><a href="#">Appliances</a></li>
+                                <li><a href="#">Smart Home</a></li>
+                                <li><a href="#">Home Living</a></li>
+                                <li><a href="#">Baby & Maternity</a></li>
+                                <li><a href="#">Video Games & VR</a></li>
+                                <li><a href="#">Wearable Technology</a></li>
+                                <li><a href="#">Health & Fitness</a></li>
+                                <li><a href="#">Sports, Recreation, & Transportation</a></li>
+                                <li><a href="#">Movies & Music</a></li>
+                                <li><a href="#">Musical Instruments & Equipment</a></li>
+                                <li><a href="#">Toys, Drones, & Educaton</a></li>
+                                <li><a href="#">Hair Care & Beuty</a></li>
+                                <li><a href="#">Shavers & Personal Care</a></li>
+                                <li><a href="#">Travel, Luggage, & Bags</a></li>
+                                <li><a href="#">Watches, Jewelry, & Fashion</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">Brands</a></h2>
+                        <div id="dropdown-content"> 
+                            <ul>
+                                <li><a href="#">Popular Brands</a></li>
+                                <li><a href="#">A B</a></li>
+                                <li><a href="#">C D E F</a></li>
+                                <li><a href="#">G H I J K</a></li>
+                                <li><a href="#">L M N O</a></li>
+                                <li><a href="#">P Q R S</a></li>
+                                <li><a href="#">T U V W X Y Z</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">Deals</a></h2>
+                        <div id="dropdown-content">
+                            <ul>
+                                <li><a href="#">Top Deals</a></li>
+                                <li><a href="#">Best Buy Outlet</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">Services</a></h2>
+                        <div id="dropdown-content">
+                            <ul>
+                                <li><a href="#">Geek Squad Services</a></li>
+                                <li><a href="#">In-Home Advisor</a></li>
+                                <li><a href="#">Best Buy Business</a></li>
+                                <li><a href="#">Best Buy Health</a></li>
+                                <li><a href="#">Trade-In Program</a></li>
+                                <li><a href="#">Electronics Recycling</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- BREAD CRUMBS -->
+            <div id="breadcrumb">
+                <ul>
+                    <li><a href="#">Home</a> &#10095; </li>
+                    <li><a href="#">Video Games</a> &#10095; </li>
+                    <li><a href="#">Xbox</a> &#10095; </li>
+                    <li><a href="#">Xbox Series X|S</a> &#10095; </li>
+                    <li><a href="#">Xbox Series X Consoles</a> &#10095; </li>
+                    <li id="prodDet"><span>Product Details</span></li>
+                </ul>
+            </div>
+            <!-- MAIN PRODUCT -->
+            <section>
+                <h1>Xbox Series X - 1TB</h1>
+                <!-- Product slideshow -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/xbox-console.png" alt="Xbox series x with controller" >
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/xbox-consolefront.png" alt="Fron of xbox series x with controller" >
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/xbox-consoleback.png" alt="Back of xbox series x with cables inputs" >
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/xbox-blackcontroller.jpg" alt="Xbox series x controller - black" >
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div class="dot-container" style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div> 
+            </section>
+            <!-- Purchase Information -->
+            <section id="buyingInfo">
+                <div id="price">
+                    <h1>$499.99</h1>
+                    <p><img src="img/bestbuy-logoblack.png" alt="Best buy logo" width="27" height="16" /> Sold and shipped by Best Buy</p>
+                </div>
+                <div id="rating">
+                    <p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i id="greyStar" class="fa-solid fa-star"></i> <a href="#reviewSection">(17,833 reviews)</a>
+                    <p><a href="#reviewSection">Leave a review</a></p>
+                </div>
+                <div id="buyButtons">
+                    <button id="cart" type="button">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+                    <button id="wishlist" type="button">Add to Wishlist <i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div id="storeAvailability">
+                    <form method="post">
+                        <label for="stock">Check Availability:</label><br>
+                        <input type="text" id="stock" name="stock" placeholder="Enter postal code"/>
+                        <button type="submit">Find your Store</button>
+                    </form>
+                </div>
+                <div id="description">
+                    <h2>Description</h2>
+                    <p>Get your hands on a gaming powerhouse with the Xbox Series X console. It pairs a custom 1TB SSD and 12 teraflops of graphics processing power for stunningly fast gameplay and reduced load times. Enjoy 4K gaming at up to 120fps, advanced 3D spatial sound, and more for an incredible experience. Plus, it supports thousands of titles across 4 generations of Xbox consoles.</p>
+                </div>
+            </section>
+            <!-- RECOMMENDED PRODUCTS -->
+            <h2>Because you like the Xbox Series X - 1TB</h2>
+            <section id="recommendedItems">
+                <div id="itemWrapping">
+                    <a href="#">
+                        <figure>
+                            <img src="img/xbox-whitecontroller.jpg" alt="White xbox series x controller " width="375" height="256" />
+                        </figure>
+                    </a>
+                    <a id="recName" href="#">
+                        <p>Xbox Series X|S Wireless Controller - Robot White</p>
+                    </a>
+                    <p id="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+                    <p>(10,627 reviews)</p>
+                    <p id="recPrice"><b>$74.99</b></p>
+                    <div>
+                        <button type="button">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div id="itemWrapping">
+                    <a href="#">
+                        <figure>
+                            <img src="img/xbox-stereoheadset.jpg" alt="Xbox stereo headset" width="302" height="375" />
+                        </figure>
+                    </a>
+                    <a id="recName" href="#">
+                        <p>Xbox Stereo Headset</p>
+                    </a>
+                    <p id="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i id="greyStar" class="fa-solid fa-star"></i> <i id="greyStar" class="fa-solid fa-star"></i></p>
+                    <p>(483 reviews)</p>
+                    <p id="recPrice"><b>$74.99</b></p>
+                    <div>
+                        <button type="button">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div id="itemWrapping">
+                    <a href="#">
+                        <figure>
+                            <img src="img/eldenring.jpg" alt="Elden Ring xbox" width="291" height="375" />
+                        </figure>
+                    </a>
+                    <a id="recName" href="#">
+                        <p>Elden Ring (Xbox Series X|S)</p>
+                    </a>
+                    <p id="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+                    <p>(7,265 reviews)</p>
+                    <p id="recPrice"><b>$79.99</b></p>
+                    <div>
+                        <button type="button">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div id="itemWrapping">
+                    <a id="recName" href="#">
+                        <figure>
+                            <img src="img/xbox-storage.jpg" alt="Seagate xbox sereis x storage expansion" width="375" height="375" />
+                        </figure>
+                    </a>
+                    <a id="recName" href="#">
+                        <p>Seagate Storage Expansion Card for Xbox Series X|S</p>
+                    </a>
+                    <p id="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i id="greyStar" class="fa-solid fa-star"></i></p>
+                    <p>(138 reviews)</p>
+                    <p id="recPrice"><b>$299.99</b></p>
+                    <div>
+                        <button type="button">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div id="itemWrapping">
+                    <a href="#">
+                        <figure>
+                            <img src="img/xbox-adapter.jpg" alt="Xbox wireless adapter" width="294" height="149" />
+                        </figure>
+                    </a>
+                    <a id="recName" href="#">
+                        <p>Xbox Wireless Adapter for Windows 10</p>
+                    </a>
+                    <p id="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i id="greyStar" class="fa-solid fa-star"></i> <i id="greyStar" class="fa-solid fa-star"></i></p>
+                    <p>(89 reviews)</p>
+                    <p id="recPrice"><b>$29.99</b></p>
+                    <div>
+                        <button type="button">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </section>
+            <!-- COLLAPSABLE SECTIONS -->
+            <section id="collapseSections">
+                <!-- Product specs -->
+                <div>
+                    <button type="button" class="collapsible"><h2>Details & Specs</h2></button>
+                    <div class="content">
+                        <div>
+                            <h3>Processor</h3>
+                            <p><b>CPU:</b> 8X Cores @ 3.8 GHz (3.66 GHz w/SMT) Custom Zen 2 CPU</p>
+                            <p><b>GPU:</b> 12 TFLOPS, 52 CUs @1.825 GHz Custom RDNA 2 GPU</p>
+                            <p><b>SOC Die Size:</b> 360.45 mm</p>
+                            <p><b>Process:</b> 7nm Enhanced</p>
+                        </div>
+                        <div>
+                            <h3>Memory & Storage</h3>
+                            <p><b>Memory:</b> 16GB GDDR6 w/320 bit-wide bus</p>
+                            <p><b>Memory Bandwidth:</b> 10GB @ 560 GB/s, 6GB @ 336 GB/s.</p>
+                            <p><b>Internal Storage:</b> 1TB Custom NVME SSD</p>
+                            <p><b>I/O Throughput:</b> 2.4 GB/s (Raw), 4.8 GB/s (Compressed, with custom hardware decompression block)</p>
+                            <p><b>Expandable Storage:</b> Support for 1TB Seagate Expansion Card for Xbox Series X|S matches internal storage exactly (sold separately). Support for USB 3.1 external HDD (sold separately).</p>
+                        </div>
+                        <div>
+                            <h3>Video Capabilities</h3>
+                            <p><b>Gaming Resolution:</b> True 4K</p>
+                            <p><b>High Dynamic Range:</b> Up to 8K HDR</p>
+                            <p><b>Optical Drive:</b> 4K UHD Blu-Ray</p>
+                            <p><b>Performance Target:</b> Up to 120 FPS</p>
+                            <p><b>HDMI Features:</b> Auto Low Latency Mode. HDMI Variable Refresh Rate. AMD FreeSync.</p>
+                        </div>
+                        <div>
+                            <h3>Sound Capabilities</h3>
+                            <ul>
+                                <li>• Dolby Digital</li>
+                                <li>• DTS 5.1</li>
+                                <li>• Dolby TrueHD with Atmos</li>
+                                <li id="last-li">• Up to 7.1 L-PCM</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Ports and Connectivity</h3>
+                            <p><b>HDMI:</b> 1x HDMI 2.1 port</p>
+                            <p><b>USB:</b> 3x USB 3.1 Gen 1 ports</p>
+                            <p><b>Wireless:</b> 802.11ac dual band</p>
+                            <p><b>Ethernet:</b> 802.3 10/100/1000</p>
+                            <p><b>Accessories radio:</b> Support for 1TB Seagate Expansion Card for Xbox Series X|S matches internal storage exactly (sold separately). Support for USB 3.1 external HDD (sold separately).</p>
+                        </div>
+                        <div>
+                            <h3>Design</h3>
+                            <p><b>Dimensions:</b> 15.1cm x 15.1cm x 30.1cm</p>
+                            <p><b>Weight:</b> 9.8 lbs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Included in box -->
+                <div>
+                    <button type="button" class="collapsible"><h2>What's Inside</h2></button>
+                    <div class="content">
+                        <ul>
+                            <li>• Xbox Series X Console</li>
+                            <li>• Xbox Wireless Controller</li>
+                            <li>• Ultra High Speed HDMI cable</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Reviews -->
+                <div id="reviewSection">
+                    <button type="button" class="collapsible"><h2>Customer Reviews</h2></button>
+                    <div class="content">
+                        <h3>Leave a Review:</h3>
+                        <div id="addRating">
+                            <input type="radio" id="star5" name="addRating" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="addRating" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="addRating" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="addRating" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="addRating" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                        <div id="leaveReview">
+                            <form method="post">
+                                <label for="reviewName">Review Title: </label>
+                                <input type="text" id="reviewName" name="reviewName" />
+                                <label for="review"> Review: </label>
+                                <textarea id="review" name="review" rows="4" cols="50">
+                                </textarea>
+                                <button id="reviewSubmit" type="submit"><a href="#">Submit Review</a></button>
+                            </form>
+                        </div>
+                        <!-- User reviews -->
+                        <h3>User Reviews</h3>
+                        <div id="userReviews">
+                            <div id="review1">
+                                <h4>Awesome</h4>
+                                <p><i class="fa-solid fa-user"></i> Reviewed by SigmaGrindset347 • August 17, 2021</p>
+                                <p>Been using xbox since 2005 and this is easily the best version of it. It's a total upgrade from the most recent xbox one, from the specs, to the games, and even to the controller. Not sure why but the little bumps on the controller make it really nice to use and it feels like you're holding air.</p>
+                            </div>
+                            <div id="review2">
+                                <h4>Love it </h4>
+                                <p><i class="fa-solid fa-user"></i> Reviewed by BigBoyBenny777 • December 2, 2020</p>
+                                <p>Best system ever. All the optimized games run incredibly and game pass is amazing. It's great that they kept backwards compatibility too. The controller is easily the best thing I've ever held in my hands and I'm a father of 4. Genuinly don't understand how anyone could buy the PS5.</p>
+                            </div>
+                            <div id="review3">
+                                <h4>Best console ever</h4>
+                                <p><i class="fa-solid fa-user"></i> Reviewed by masterbeef117 • November 3, 2021</p>
+                                <p>Holy geez this thing is awesome. It feels badass having it sit by your TV like it's the obelisk from 2011: A Space Odyssey or something. The 4K also looks incredible, even on my low-budget TV.</p>
+                            </div>
+                            <div id="review4">
+                                <h4>Honestly the OS and UI still kinda suck</h4>
+                                <p><i class="fa-solid fa-user"></i> Reviewed by Mr.Brightside • January 14, 2022</p>
+                                <p>Honestly the only reason I get Xbox anymore is because of the games I own. Phil Spencer is a hack but buying a Playstation at this point would literally be throwing money away. Halo Infinite isn't even good and the sensitivity is broken, and the UI is still that thrash from the Xbox One. Slow and clumbsy to navigate with giant obnoxious panels but at least it's smooth, I guess.</p>
+                            </div>
+                            <p id="reviewLink"><a href="#">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Return policy -->
+                <div>
+                    <button type="button" id="collapsible-bottom" class="collapsible"><h2>Return Policy</h2></button>
+                    <div class="content">
+                        <table cellspacing="0" id="policyTable">
+                            <tbody>
+                                <tr id="productRow">
+                                    <td><b>Product Category</b></td>
+                                    <td>Gaming consoles</td>
+                                </tr>
+                                <tr id="returnRow">
+                                    <td><b>Return/Exchange Period</b></td>
+                                    <td>30 Days</td>
+                                </tr>
+                                <tr id="conditionRow">
+                                    <td><b>Condition</b></td>
+                                    <td>Opened</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="policy-learn"><a href="#">Learn more about our return policy</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <section>
+                <div id="custSupport">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Best Buy Financing</a></li>
+                    </ul>
+                </div>
+                <div id="account">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Manage Accounts</a></li>
+                        <li><a href="#">Email Preferences</a></li>
+                    </ul>
+                </div>
+                <div id="services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Geek Squad</a></li>
+                        <li><a href="#">In-Home Advisor</a></li>
+                        <li><a href="#">Trade-In Program</a></li>
+                        <li><a href="#">Electronics Recycling</a></li>
+                        <li><a href="#">Best Buy Health</a></li>
+                    </ul>
+                </div>
+                <div id="aboutUs">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                        <li><a href="#">About Best Buy Marketplace</a></li>
+                        <li><a href="#">Sell on Best Buy Marketplace</a></li>
+                        <li><a href="#">Best Buy Affiliate Program</a></li>
+                        <li><a href="#">Advertise with Best Buy</a></li>
+                    </ul>
+                </div>
+                <div id="intSites">
+                    <h4>International Sites</h4>
+                    <ul>
+                        <li><a href="#">Best Buy US</a></li>
+                    </ul>
+                </div>
+                <div id="mobileApps">
+                    <h4>Mobile Apps</h4>
+                    <ul>
+                        <li><a href="#"></a><i class="fa-brands fa-android"></i> Android App</li>
+                        <li><a href="#"></a><i class="fa-brands fa-apple"></i> iOS App</li>
+                    </ul>
+                </div>
+                <div id="inTheKnow">
+                    <h4>Be in the know</h4>
+                    <p>Sign up for our newsletter and be the first to learn about new products, deals, and exclusive sales!</p>
+                    <form method="post">
+                        <input type="text" id="newsletterInput" name="newsletterInput" placeholder="Email Address" />
+                        <button id="newsletterButton" type="submit"><a href="#">Sign Up</a></button>
+                    </form>
+                    <div id="socialIcons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+            <p>Project 2 for COMP1054 with Jeremy McCulley | By Nick Vaillancourt</p>
+        </footer>
+    </body>
+</html>

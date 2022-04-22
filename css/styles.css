@@ -1,0 +1,863 @@
+/* GENERAL STYLING */
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Verdana, Helvetica, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trebuchet MS', 'Tahoma', Arial, sans-serif
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: inline;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+i {
+    padding-right: 5px;
+}
+
+main > section {
+    margin-bottom: 20px;
+}
+
+/* HEADER */
+header {
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    margin: 0;
+    background-color: #0046be;
+}
+
+/* Header Top */
+#headerTop {
+    text-align: right;
+    margin-right: 5%;
+    padding: 20px 0 20px 0;
+}
+
+#headerTop > ul > li {
+    display: inline;
+    padding-left: 15px;
+}
+
+#headerTop > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#headerTop > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+#headerTop > ul > li > a:visited {
+    text-decoration: none;
+}
+
+/* Header Logo*/
+#headerMid {
+    display: flex;
+    justify-content: center;
+    margin: 0 5% 0 5%;
+    padding-bottom: 10px;
+}
+
+#headerLogo {
+    flex-grow: 1;
+}
+
+/* Search Bar */
+#headerSearch {
+    flex-grow: 17;
+}
+
+#headerSearch > form > input {
+    height: 50px;
+    border-radius: 2px;
+    width: 47%;
+}
+
+#headerSearch > form > input:focus {
+    outline: none;
+}
+
+#searchText {
+    border: none;
+    padding-left: 15px;
+}
+
+#searchButton {
+    background-color: #fff;
+    height: 46px;
+    width: 46px;
+    margin-left: -51px;
+    border: none;
+    border-radius: 2px;
+}
+
+#searchButton > img {
+    vertical-align: middle;
+}
+
+/* Header Icons */
+#headerIcons > ul {
+    display: flex;
+    text-align: left;
+}
+
+#headerIcons > ul > li {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#headerIcons > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#headerIcons > ul > li > a:hover {
+    text-decoration: underline;
+    color: #fff200;
+}
+
+#headerIcons > ul > li > a:visited {
+    text-decoration: none;
+}
+
+/* Nav */
+#nav {
+    padding-left: 3.5%;
+    background-color: #003da6;
+}
+
+#nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+#nav ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+#nav ul li a {
+    display: block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#nav ul li div#dropdown-content {
+    min-width: 100%;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    border: 2px solid #003da6;
+    border-top: 0px solid #003da6;
+}
+
+#nav ul li:hover div#dropdown-content {
+    display: block;
+}
+
+#nav ul li div#dropdown-content a {
+    display: block;
+    color: #000;
+}
+
+#nav ul li div#dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* BREAD CRUMBS */
+#breadcrumb {
+    padding: 10px 5% 0 5%;
+}
+
+#breadcrumb > ul > li {
+    display: inline;
+}
+
+#breadcrumb > ul > li > a {
+    color: #0046be;
+    padding: 0 5px 0 5px;
+    text-decoration: none;
+}
+
+#breadcrumb > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+#breadcrumb > ul > #prodDet {
+    color: #000;
+    padding-left: 5px;
+}
+
+/* PRODUCT TITLE */
+main > section > h1 {
+    font-size: 2.5em;
+    margin: 20px 0 20px 0;
+}
+
+/* PRODUCT SLIDESHOW */
+section > .slideshow-container > * {
+    box-sizing: border-box;
+}
+
+.mySlides > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: #0046be;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#dot-container {
+    margin-bottom: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* MAIN */
+main > h2 {
+    margin: 20px 5% 20px 5%;
+}
+
+main > section {
+    padding: 0 5% 0 5%;
+}
+
+/* BUYING INFO */
+main > #buyingInfo {
+    display: grid;
+    grid-template-areas:
+    "price desc buttons input"
+    "rating desc buttons input";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 47% 47%;
+    background-color: #f2f5f8;
+    padding: 15px 5% 15px 5%;
+}
+
+/* Price */
+main > #buyingInfo > #price {
+    grid-area: price;
+}
+
+main > #buyingInfo > #price > h1 {
+    color: #bb0628;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+main > #buyingInfo > #price > p {
+    font-size: 12px;
+}
+
+/* Rating */
+main > #buyingInfo > #rating {
+    grid-area: rating;
+    margin-top: -30px;
+}
+
+main > #buyingInfo > #rating > p {
+    margin: 5px 0 10px 0;
+}
+
+main > #buyingInfo > #rating > p > a {
+    color: #000;
+    text-decoration: none;
+}
+
+main > #buyingInfo > #rating > p > a:hover {
+    text-decoration: underline;
+}
+
+main > #buyingInfo > #rating > p > i {
+    color: #ffd700;
+}
+
+main > #buyingInfo > #rating > p > #greyStar {
+    color: #ccc;
+}
+
+/* Description */
+main > #buyingInfo > #description {
+    grid-area: desc;
+    display: inline;
+}
+
+/* Buttons */
+main > #buyingInfo > #buyButtons {
+    grid-area: buttons;
+    justify-content: center;
+    display: grid;
+}
+
+main > #buyingInfo > #buyButtons > button {
+    width: 250px;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 2px;
+}
+
+main > #buyingInfo > #buyButtons > button > i {
+    padding-left: 5px;
+}
+
+main > #buyingInfo > #buyButtons > #cart {
+    background-color: #ffce00;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+main > #buyingInfo > #buyButtons > #cart:hover {
+    background-color: #fff035;
+}
+
+main > #buyingInfo > #buyButtons > #wishlist {
+    background-color: #0046be;
+    color: #fff;
+    text-decoration: none;
+}
+
+main > #buyingInfo > #buyButtons > #wishlist:hover {
+    background-color: #00216e;
+}
+
+/* Availability */
+main > #buyingInfo > #storeAvailability {
+    grid-area: input;
+    line-height: 250px;
+}
+
+main > #buyingInfo > #storeAvailability > form {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 14px; 
+}
+
+main > #buyingInfo > #storeAvailability > form > input {
+    margin: 5px 0 0 0;
+}
+
+main > #buyingInfo > #storeAvailability > form > input {
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #adadad;
+    width: 48%;
+    padding-left: 15px;
+}
+
+main > #buyingInfo > #storeAvailability > form > button {
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    height: 48px;
+    padding: 0px 20px 0px 20px;
+}
+
+main > #buyingInfo > #storeAvailability > form > button:hover {
+    cursor: pointer;
+    background-color: #00216e;
+} 
+
+main > #buyingInfo > #storeAvailability > form > a:link,
+main > #buyingInfo > #storeAvailability > form >a:hover,
+main > #buyingInfo > #storeAvailability > form > a:active,
+main > #buyingInfo > #storeAvailability > form > a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* RECOMMENDED PRODUCTS */
+main > #recommendedItems {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin-bottom: 20px;
+}
+
+main > #recommendedItems > #itemWrapping {
+    border: 2px solid #eff2f7;
+    align-content: end;
+    display: grid;
+    border-radius: 2px;
+    margin: 0px 3px 0 3px;
+}
+
+main > #recommendedItems > #itemWrapping > p {
+    margin-left: 5px;
+}
+
+/* Product Figure */
+main > #recommendedItems > #itemWrapping > a > figure > img {
+    width: 100%;
+    height: auto;
+}
+
+main > #recommendedItems > #itemWrapping > a > figure > figcaption {
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+
+main > #recommendedItems > #itemWrapping > #recName {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+main > #recommendedItems > #itemWrapping > #recName:hover {
+    text-decoration: underline;
+}
+
+main > #recommendedItems > #itemWrapping > #recName:visited {
+    text-decoration: underline;
+}
+
+/* Product Rating */
+
+main > #recommendedItems > #itemWrapping > #rating {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+main > #recommendedItems > #itemWrapping > #rating > i {
+    color: #ffd700;
+}
+
+main > #recommendedItems > #itemWrapping > #rating > i#greyStar {
+    color: #ccc;
+}
+
+/* Product Price */
+main > #recommendedItems > #itemWrapping > #recPrice {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Add Product to Cart */
+main > #recommendedItems > #itemWrapping > div {
+    display: grid;
+}
+
+main > #recommendedItems > #itemWrapping > div > button {
+    height: 48px;
+    background-color: #ffce00;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1em;
+}
+
+main > #recommendedItems > #itemWrapping div button:hover {
+    background-color: #fff035;
+}
+
+/* COLLAPSING SECTIONS */
+main > #collapseSections > div > .collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-top: 2px solid #e0e6ef;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+main > #collapseSections > div > .collapsible:hover {
+    background-color: #fff;
+}
+
+.active, main > #collapseSections > div > .collapsible > h2:hover {
+    color: #0046be;
+}
+
+main > #collapseSections > div > .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+main > #collapseSections > div > .content > ul > li {
+    padding: 0 0 0 40px ;
+}
+
+main > #collapseSections > div > .content > p > a {
+    text-decoration: none;
+    color: #000;
+}
+
+main > #collapseSections > div > .content > p > a:hover {
+    text-decoration: underline;
+}
+
+/* Details and Specs */
+main > #collapseSections > div > .content > div > h3 {
+    text-decoration: underline;
+    margin-top: 0;
+} 
+
+main > #collapseSections > div > .content > div > p  {
+    padding-left: 40px;
+}
+
+main > #collapseSections > div > .content > div > ul > li {
+    padding: 0 0 0 40px ;
+}
+
+main > #collapseSections > div > .content > div > ul > #last-li {
+    padding: 0 0 0 40px ;
+}
+
+/* Write a Review */
+#addRating {
+    height: 46px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+#addRating:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+#addRating:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+#addRating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+#addRating> input:checked ~ label {
+    color: #ffc700;    
+}
+
+#addRating:not(:checked) > label:hover,
+#addRating:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+#addRating > input:checked + label:hover,
+#addRating > input:checked + label:hover ~ label,
+#addRating > input:checked ~ label:hover,
+#addRating > input:checked ~ label:hover ~ label,
+#addRating > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+main > #collapseSections > div > .content > h3 {
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+main > #collapseSections > #reviewSection > .content > div#addRating {
+    padding: 0 0 0 40px;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview {
+    margin: 0 0 0 40px;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview > form {
+    display: grid;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview > form > label {
+    padding: 5px 0 5px 0;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview > form > input, 
+main > #collapseSections > #reviewSection > .content > #leaveReview > form > textarea  {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview > form > #reviewSubmit {
+    background-color: #0046be;
+    border: none;
+    height: 48px;
+    margin-bottom: 25px;
+    width: 11%;
+    border-radius: 2px;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview > form > #reviewSubmit > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main > #collapseSections > #reviewSection > .content > #leaveReview > form > #reviewSubmit:hover {
+    cursor: pointer;
+    background-color: #00216e;
+}
+
+/* Customer Reviews */
+main > #collapseSections > #reviewSection > .content > #userReviews {
+    display: grid;
+    grid-template-areas:
+    "review1 review2"
+    "review3 review4";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 0 40px 0 40px;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > div {
+    border: 2px solid #eff2f7;
+    border-radius: 2px;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #review1 {
+    grid-area: review1;
+    margin: 0 3px 3px 0;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #review2 {
+    grid-area: review2;
+    margin: 0 0 3px 0;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #review3 {
+    grid-area: review3;
+    margin: 0 3px 0 0;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #review4 {
+    grid-area: review4;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #reviewLink {
+    padding: 0;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > div > h4,
+main > #collapseSections > #reviewSection > .content > #userReviews > div > p {
+    padding: 0 21px 0 21px;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #reviewLink > a {
+    color: #000;
+    text-decoration: none;
+}
+
+main > #collapseSections > #reviewSection > .content > #userReviews > #reviewLink > a:hover {
+    text-decoration: underline;
+}
+
+/* Return Policy */
+main > #collapseSections > div > .content > #policyTable {
+    width: 45%;
+}
+
+main > #collapseSections > div > .content > #policyTable > tbody > tr > td {
+    padding: 18px;
+}
+
+main > #collapseSections > div > .content > #policyTable > tbody > #productRow,
+main > #collapseSections > div > .content > #policyTable > tbody > #conditionRow {
+    background-color: #f4f6f9;
+}
+
+main > #collapseSections > div > .content > #policyTable > tbody > #returnRow {
+    background-color: #fff;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f4f6f9;
+    padding: 0 5% 0 5%;
+    color: #000;
+}
+
+footer li {
+    font-size: 12px;
+}
+
+footer li a:link,
+footer li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+footer li a:hover,
+footer li a:active {
+    color: #0046be;
+    text-decoration: underline;
+}
+
+footer > section {
+    display: grid;
+    grid-template-areas:
+        "div1 div2 div3 form"
+        "div4 div5 div6 form";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 20% 20% 20% 40%;
+
+}
+
+footer > section > div > ul > li {
+    padding: 7px 0 7px 0;
+}
+
+#custSupport {
+    grid-area: div1;
+}
+
+#account {
+    grid-area: div2;
+}
+
+#services {
+    grid-area: div3;
+}
+
+#aboutUs {
+    grid-area: div4;
+}
+
+#intSites {
+    grid-area: div5;
+}
+
+#mobileApps {
+    grid-area: div6;
+}
+
+
+/* Email Form */
+#inTheKnow {
+    grid-area: form;
+}
+
+#inTheKnow > p {
+    width: 67%;
+}
+
+#newsletterInput {
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #adadad;
+    width: 48%;
+    padding-left: 15px;
+}
+
+#newsletterButton {
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    height: 48px;
+    padding: 0px 20px 0px 20px;
+}
+
+#newsletterButton:hover {
+    cursor: pointer;
+    background-color: #00216e;
+} 
+
+#newsletterButton a:link,
+#newsletterButton a:hover,
+#newsletterButton a:active,
+#newsletterButton a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Social Icons */
+#socialIcons {
+    margin-top: 10px
+}
+
+#socialIcons a {
+    margin-right: 43px;
+    font-size: 20px;
+    color: #000;
+}
+
+#socialIcons a:hover {
+    color: #0046be;
+}
+
+/* Footer Bottom */
+footer > p {
+    margin: 0;
+    font-size: 12px;
+    padding: 7px 0 5px 0;
+    text-align: center;
+}
